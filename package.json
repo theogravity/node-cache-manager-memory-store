@@ -1,10 +1,12 @@
 {
   "name": "cache-manager-memory-store",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extremely simple in-memory store for node-cache-manager. Primarily used for testing purposes.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "standard && jest --verbose --useStderr"
+    "test": "standard && jest --verbose --useStderr",
+    "build": "babel index.js lib/MemoryClient.js -d build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,7 @@
     "testRegex": ".spec.js$"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-jest": "19.0.0",
     "babel-preset-env": "1.1.10",
     "cache-manager": "2.4.0",
