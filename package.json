@@ -1,6 +1,6 @@
 {
   "name": "cache-manager-memory-store",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extremely simple in-memory store for node-cache-manager. Primarily used for testing purposes.",
   "main": "build/index.js",
   "scripts": {
