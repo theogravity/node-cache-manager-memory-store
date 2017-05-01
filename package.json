@@ -1,0 +1,42 @@
+{
+  "name": "cache-manager-memory-store",
+  "version": "1.0.0",
+  "description": "Extremely simple in-memory store for node-cache-manager. Primarily used for testing purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && jest --verbose --useStderr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theogravity/node-cache-manager-memory-store.git"
+  },
+  "keywords": [
+    "node-cache-manager",
+    "cache-manager",
+    "store"
+  ],
+  "author": "Theo Gravity <theo@suteki.nu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theogravity/node-cache-manager-memory-store/issues"
+  },
+  "homepage": "https://github.com/theogravity/node-cache-manager-memory-store#readme",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "jest": {
+    "transform": {
+      ".js": "<rootDir>/node_modules/babel-jest"
+    },
+    "testRegex": ".spec.js$"
+  },
+  "devDependencies": {
+    "babel-jest": "19.0.0",
+    "babel-preset-env": "1.1.10",
+    "cache-manager": "2.4.0",
+    "jest-cli": "19.0.2",
+    "standard": "10.0.2"
+  }
+}
