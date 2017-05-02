@@ -1,5 +1,7 @@
 # node-cache-manager-memory-store
 
+Note: `node-cache-manager` already has a built-in memory store as a default when no stores are used.
+
 Simple in-memory store for [node-cache-manager](https://github.com/BryanDonovan/node-cache-manager). Mainly used for unit testing purposes.
 
 Does not do anything special other than maintain an in-memory object, getting and setting values to it.
